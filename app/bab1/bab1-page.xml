@@ -1,0 +1,26 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar>
+        <NavigationButton visibility="hidden"></NavigationButton>
+        <GridLayout columns="50, *">
+            <Label class="action-bar-title" text="Demo Bab I" colSpan="2"/>
+            <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+        </GridLayout>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout> 
+            <Button text="Save to Phonebook Android" tap="saveToPhoneBookAndroid" class="btn-primary" />
+
+            <Button text="Show Toast Android (Java)" tap="showToastAndroidJava" class="btn-primary" /> 
+
+            <Button text="Show Toast Android (Kotlin)" tap="showToastAndroidKotlin" class="btn-primary" /> 
+
+            <Button text="Save to Phonebook IOS" tap="saveToPhoneBookIOS" class="btn-primary" />
+
+            <Button text="Show Alert IOS" tap="showAlertIOS" class="btn-primary" />
+        </StackLayout> 
+    </ScrollView>
+</Page>

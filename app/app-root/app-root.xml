@@ -1,0 +1,107 @@
+<nsDrawer:RadSideDrawer
+  id="sideDrawer"
+  xmlns:nsDrawer="nativescript-ui-sidedrawer"
+  loaded="onLoaded"
+  class="ns-statusbar-transparent"
+>
+    <nsDrawer:RadSideDrawer.drawerTransition>
+        <nsDrawer:SlideInOnTopTransition />
+    </nsDrawer:RadSideDrawer.drawerTransition>
+
+    <nsDrawer:RadSideDrawer.drawerContent>
+        <GridLayout rows="auto, *" class="nt-drawer__content">
+            <StackLayout class="nt-drawer__header">
+                <Image class="nt-drawer__header-image fas t-36" src="font://&#xf06d;" />
+                <Label class="nt-drawer__header-brand" text="Sample Demo of" />
+                <Label class="nt-drawer__header-footnote" text="Nativescript Book" />
+            </StackLayout>
+
+            <ScrollView row="1">
+                <StackLayout>
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Home' ? ' -selected': '') }}"
+            route="home/home-page"
+            title="Home"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf015;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Home" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab1' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="Bab1"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab I" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab2' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="Bab2"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab II" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab3' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="Bab3"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab III" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab4' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="Bab4"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab IV" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab5' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="Bab5"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab V" class="p-r-10" />
+                    </GridLayout>
+
+                    <StackLayout class="hr" />
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === 'About' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="About"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf013;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="About" class="p-r-10" />
+                    </GridLayout>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </nsDrawer:RadSideDrawer.drawerContent>
+
+    <nsDrawer:RadSideDrawer.mainContent>
+        <Frame defaultPage="home/home-page" />
+    </nsDrawer:RadSideDrawer.mainContent>
+</nsDrawer:RadSideDrawer>

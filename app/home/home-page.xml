@@ -1,0 +1,46 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar>
+        <NavigationButton visibility="hidden"></NavigationButton>
+        <GridLayout columns="50, *">
+            <Label class="action-bar-title" text="Home" colSpan="2"/>
+            <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+        </GridLayout>
+    </ActionBar>
+
+    <GridLayout>
+        <StackLayout horizontalAlignment="center" verticalAlignment="middle">
+            <Label textWrap="true" textAlignment="center" fontSize="128" class="ruby-color">
+                <FormattedString>
+                    <Span text="&#xf06d;" class="fas" />
+                </FormattedString>
+            </Label>
+            <Label textWrap="true" textAlignment="center" fontSize="36">
+                <FormattedString>
+                    <Span text="Sample Demo of" />
+                    <Span text="&nbsp; Nativescript Book" fontWeight="bold" />
+                </FormattedString>
+            </Label>
+            <Label textWrap="true" textAlignment="center" fontSize="24">
+                <FormattedString>
+                    <Span text="by" />
+                    <Span text="&nbsp;Kang Cahya" class="ruby-color" />
+                </FormattedString>
+            </Label>
+
+            <StackLayout class="mt-3">
+                <Button text="Demo BAB I"  class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" /> 
+
+                <Button text="Demo BAB II" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" /> 
+
+                <Button text="Demo BAB III" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" /> 
+
+                <Button text="Demo BAB IV" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
+                
+                <Button text="Demo BAB V" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" /> 
+            </StackLayout>
+        </StackLayout>
+    </GridLayout>
+</Page>

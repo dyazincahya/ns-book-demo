@@ -11,9 +11,10 @@
     <nsDrawer:RadSideDrawer.drawerContent>
         <GridLayout rows="auto, *" class="nt-drawer__content">
             <StackLayout class="nt-drawer__header">
-                <Image class="nt-drawer__header-image fas t-36" src="font://&#xf06d;" />
-                <Label class="nt-drawer__header-brand" text="Sample Demo of" />
-                <Label class="nt-drawer__header-footnote" text="Nativescript Book" />
+                <Image src="~/assets/logo.png" height="100" />
+                <!-- <Image class="nt-drawer__header-image fas t-36" src="font://&#xf06d;" /> -->
+                <Label class="nt-drawer__header-brand" text="NS Book" />
+                <Label class="nt-drawer__header-footnote" text="demo" />
             </StackLayout>
 
             <ScrollView row="1">

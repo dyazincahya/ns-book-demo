@@ -1,5 +1,5 @@
 {
-  "name": "sampleDemoOfNativescriptBook",
+  "name": "ns-book-demo",
   "main": "app/app.js",
   "version": "1.0.0",
   "private": true,
@@ -11,6 +11,10 @@
   },
   "devDependencies": {
     "@nativescript/android": "8.7.0",
-    "@nativescript/webpack": "~5.0.21"
+    "@nativescript/webpack": "~5.0.21",
+    "image-minimizer-webpack-plugin": "^4.0.2",
+    "imagemin": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^10.0.0"
   }
 }

@@ -72,10 +72,3 @@ export function onPinch(args) {
     "State >> " + args.state + " | " + "Scale >> " + args.scale
   );
 }
-
-export function onRotate(args) {
-  console.log("Rotate");
-  console.log("Rotation >> ", args.rotation);
-  context.set("gestureName", "Rotate");
-  context.set("gestureData", "Rotation >> " + args.rotation);
-}

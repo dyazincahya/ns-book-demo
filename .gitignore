@@ -2,6 +2,9 @@
 hooks/
 node_modules/
 platforms/
+.migration_backup
+package-lock.json
+timeline-emulator-5554.json
 
 # Logs
 logs

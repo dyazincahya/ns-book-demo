@@ -40,7 +40,11 @@
 
                 <Button text="Demo BAB IV" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
 
-                <Button text="Demo BAB V" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
+                <Button text="Demo BAB V" class="btn-ruby" tap="openModule" moduleName="bab5/bab5-page" />
+
+                <Button text="Demo BAB VI" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
+
+                <Button text="Demo BAB VII" class="btn-ruby" tap="openModule" moduleName="bab7/bab7-page" />
             </StackLayout>
         </StackLayout>
     </GridLayout>

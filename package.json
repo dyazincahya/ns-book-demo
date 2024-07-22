@@ -4,17 +4,17 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.7.0",
-    "@nativescript/theme": "~3.0.2",
-    "nativescript-ui-sidedrawer": "~15.2.0",
+    "@nativescript-community/perms": "^2.3.3",
+    "@nativescript/background-http": "^6.0.1",
+    "@nativescript/core": "^8.8.1",
+    "@nativescript/theme": "^3.0.2",
+    "@nativescript/types": "^8.8.0",
+    "@nativescript/types-android": "^8.8.0",
+    "nativescript-ui-sidedrawer": "^15.2.3",
     "rxjs": "~7.8.0"
   },
   "devDependencies": {
-    "@nativescript/android": "8.7.0",
-    "@nativescript/webpack": "~5.0.21",
-    "image-minimizer-webpack-plugin": "^4.0.2",
-    "imagemin": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-pngquant": "^10.0.0"
+    "@nativescript/android": "8.8.0",
+    "@nativescript/webpack": "~5.0.21"
   }
 }

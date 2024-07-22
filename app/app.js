@@ -1,6 +1,9 @@
-import { Application } from '@nativescript/core'
+import { Application } from "@nativescript/core";
+import { init } from "@nativescript/background-http";
 
-Application.run({ moduleName: 'app-root/app-root' })
+init();
+
+Application.run({ moduleName: "app-root/app-root" });
 
 /*
 Do not place any code after the application has been started as it will not

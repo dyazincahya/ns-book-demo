@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Stylesheets" colSpan="2"/>
+          <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <GridLayout class="p-3">
+    <Label text="Bounce Text" class="bounce my-text" textWrap="true" />
+  </GridLayout>
+</Page>

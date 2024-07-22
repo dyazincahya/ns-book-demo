@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Observable" colSpan="2"/>
+          <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <StackLayout class="p-3">
+    <Label text="Contoh Binding data menggunakan Observable dengan Model" textAlignment="center" verticalAlignment="center" />
+    <Label text="{{ myName }}" class="h1 my-text" textAlignment="center" verticalAlignment="center" />
+  </StackLayout>
+</Page>

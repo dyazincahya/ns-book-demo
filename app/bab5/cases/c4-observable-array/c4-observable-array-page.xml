@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Observable Array" colSpan="2"/>
+          <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <GridLayout rows="auto, *" class="p-3">
+    <Label row="0" text="Contoh Binding data Array menggunakan Observable Array" textAlignment="center" verticalAlignment="center" />
+    <ListView row="1" items="{{ animals }}">
+      <ListView.itemTemplate>
+        <GridLayout padding="16">
+          <Label text="{{ name }}" textWrap="true" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>

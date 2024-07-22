@@ -1,0 +1,43 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Demo Bab 5" colSpan="2"/>
+          <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <StackLayout class="p-3">
+    <Button text="5.2 Stylesheets" class="btn-success" tap="openModule" moduleName="bab5/cases/c1-stylesheets/c1-stylesheets-page"  />   
+    
+    <Button text="5.3.1 Observable" class="btn-success" tap="openModule" moduleName="bab5/cases/c2-observable/c2-observable-page"  />   
+    
+    <Button text="5.3.1 Observable 2" class="btn-success" tap="openModule" moduleName="bab5/cases/c3-observable-2/c3-observable-2-page"  />   
+    
+    <Button text="5.3.2 Observable Array" class="btn-success" tap="openModule" moduleName="bab5/cases/c4-observable-array/c4-observable-array-page"  />   
+    
+    <Button text="5.4.5 FileSystem" class="btn-success" tap="openModule" moduleName="bab5/cases/c5-filesystem/c5-filesystem-page"  />   
+    
+    <Button text="5.5 Gesture" class="btn-success" tap="openModule" moduleName="bab5/cases/c6-gesture/c6-gesture-page"  />   
+  </StackLayout>
+  <!-- <TabView tabBackgroundColor="#37474F" tabTextColor="#BDBDBD">
+    <TabViewItem title="Binding Data from Model">
+      <Label text="{{ myName }}" class="h1" textAlignment="center" verticalAlignment="center" />
+    </TabViewItem>
+    <TabViewItem title="Binding Data from Controller">
+      <Label text="{{ myBlog }}" class="h1" textAlignment="center" verticalAlignment="center" />
+    </TabViewItem>
+    <TabViewItem title="Binding Data Array">
+      <ListView items="{{ animals }}">
+        <ListView.itemTemplate>
+          <GridLayout padding="16">
+            <Label text="{{ name }}" textWrap="true" />
+          </GridLayout>
+        </ListView.itemTemplate>
+      </ListView>
+    </TabViewItem>
+    <TabViewItem title="fileSystem">
+      <Button tap="fileSystem" text="test" />
+    </TabViewItem>
+  </TabView> -->
+</Page>

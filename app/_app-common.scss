@@ -21,12 +21,12 @@
 }
 
 .ruby-color {
-  color: const(ruby); // hex code : #ff1744
+  color: #ff1744; // hex code : #ff1744
 }
 
 // Drawer navigation custom styles
 .nt-drawer__header-image {
-  color: const(grey);
+  color: grey;
 }
 
 /* MARGIN PROPERTIES : start */
@@ -41,6 +41,9 @@ $spacers: (
 );
 
 @each $key, $value in $spacers {
+  .m-#{$key} {
+    margin: #{$value};
+  }
   .mr-#{$key} {
     margin-right: #{$value};
   }
@@ -52,6 +55,9 @@ $spacers: (
   }
   .mb-#{$key} {
     margin-bottom: #{$value};
+  }
+  .p-#{$key} {
+    padding: #{$value};
   }
   .pr-#{$key} {
     padding-right: #{$value};
@@ -84,7 +90,7 @@ $spacers: (
 
 .btn-success {
   background-color: #43a047;
-  color: #000000;
+  color: #ffffff;
   border-radius: 50%;
   font-weight: bold;
 }
@@ -97,7 +103,7 @@ $spacers: (
 }
 
 .btn-ruby {
-  background-color: const(ruby); // hex code : #ff1744
+  background-color: #ff1744; // hex code : #ff1744
   color: #ffffff;
   border-radius: 50%;
   font-weight: bold;

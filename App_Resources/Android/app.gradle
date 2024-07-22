@@ -1,17 +1,16 @@
 // You can add your native dependencies here
 dependencies {
   //  implementation 'androidx.multidex:multidex:2.0.1'
-  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+  // implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 }
 
 // apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+// apply plugin: 'kotlin-android'
 // apply plugin: 'kotlin-android-extensions'
 
 android {
   compileSdkVersion 34
   buildToolsVersion "34"
-  // ndkVersion ""
 
   defaultConfig {
     minSdkVersion 24

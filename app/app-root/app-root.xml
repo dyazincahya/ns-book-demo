@@ -77,12 +77,23 @@
                     <GridLayout
             columns="auto, *"
             class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab5' ? ' -selected': '') }}"
-            route="bab1/bab1-page"
+            route="bab5/bab5-page"
             title="Bab5"
             tap="onNavigationItemTap"
           >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
                         <Label row="0" col="1" text="Demo Bab V" class="p-r-10" />
+                    </GridLayout>
+
+                    <GridLayout
+            columns="auto, *"
+            class="{{ 'nt-drawer__list-item' + (selectedPage === '7' ? ' -selected': '') }}"
+            route="bab1/bab1-page"
+            title="7"
+            tap="onNavigationItemTap"
+          >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab VII" class="p-r-10" />
                     </GridLayout>
 
                     <StackLayout class="hr" />

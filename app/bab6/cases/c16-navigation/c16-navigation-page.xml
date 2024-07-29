@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Navigation" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+
+    <ActionItem android.systemIcon="ic_menu_share" android.position="actionBar" tap="sharePage" />
+    <ActionItem text="Feedback" tap="feedbackPage" android.position="popup" />
+    <ActionItem text="Blog" tap="blogPage" android.position="popup" />
+    <ActionItem text="About" tap="aboutPage" android.position="popup" />
+  </ActionBar>
+
+  <StackLayout class="p-3">
+    <Label text="Halaman 1" class="h2" horizontalAlignment="center" />
+    <Button text="Menuju ke halaman 2" class="btn-primary" tap="goToPage2" />
+  </StackLayout>
+</Page>

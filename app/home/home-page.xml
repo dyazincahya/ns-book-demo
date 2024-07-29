@@ -13,11 +13,6 @@
     <GridLayout>
         <StackLayout horizontalAlignment="center" verticalAlignment="middle">
             <Image src="~/assets/logo.png" height="150" />
-<!--            <Label textWrap="true" textAlignment="center" fontSize="128" class="ruby-color">-->
-<!--                <FormattedString>-->
-<!--                    <Span text="&#xf06d;" class="fas" />-->
-<!--                </FormattedString>-->
-<!--            </Label>-->
             <Label textWrap="true" textAlignment="center" fontSize="36">
                 <FormattedString>
                     <Span text="&nbsp; NS Book" fontWeight="bold" />
@@ -32,19 +27,13 @@
             </Label>
 
             <StackLayout class="mt-3">
-                <Button text="Demo BAB I"  class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
-
-                <Button text="Demo BAB II" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
-
-                <Button text="Demo BAB III" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
-
-                <Button text="Demo BAB IV" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
-
-                <Button text="Demo BAB V" class="btn-ruby" tap="openModule" moduleName="bab5/bab5-page" />
-
-                <Button text="Demo BAB VI" class="btn-ruby" tap="openModule" moduleName="bab1/bab1-page" />
-
-                <Button text="Demo BAB VII" class="btn-ruby" tap="openModule" moduleName="bab7/bab7-page" />
+                <Button class="btn-ruby" tap="onDrawerButtonTap">
+                    <FormattedString>
+                        <Span class="fas" text="&#xf0c9;" />
+                        <Span text="&nbsp;&nbsp;" />
+                        <Span text="Buka Daftar Isi" />
+                    </FormattedString>
+                </Button>
             </StackLayout>
         </StackLayout>
     </GridLayout>

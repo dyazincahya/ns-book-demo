@@ -20,24 +20,4 @@
     
     <Button text="5.5 Gesture" class="btn-success" tap="openModule" moduleName="bab5/cases/c6-gesture/c6-gesture-page"  />   
   </StackLayout>
-  <!-- <TabView tabBackgroundColor="#37474F" tabTextColor="#BDBDBD">
-    <TabViewItem title="Binding Data from Model">
-      <Label text="{{ myName }}" class="h1" textAlignment="center" verticalAlignment="center" />
-    </TabViewItem>
-    <TabViewItem title="Binding Data from Controller">
-      <Label text="{{ myBlog }}" class="h1" textAlignment="center" verticalAlignment="center" />
-    </TabViewItem>
-    <TabViewItem title="Binding Data Array">
-      <ListView items="{{ animals }}">
-        <ListView.itemTemplate>
-          <GridLayout padding="16">
-            <Label text="{{ name }}" textWrap="true" />
-          </GridLayout>
-        </ListView.itemTemplate>
-      </ListView>
-    </TabViewItem>
-    <TabViewItem title="fileSystem">
-      <Button tap="fileSystem" text="test" />
-    </TabViewItem>
-  </TabView> -->
 </Page>

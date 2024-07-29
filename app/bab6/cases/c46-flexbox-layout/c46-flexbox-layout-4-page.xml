@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Flexbox Layout 2" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <FlexboxLayout flexWrap="wrap" backgroundColor="#eef7ff">
+    <Label text="1" width="30%" backgroundColor="#43B3F4" />
+    <Label text="2" width="30%" backgroundColor="#075B88" />
+    <Label text="3" width="30%" backgroundColor="#1089CA" />
+    <Label text="4" width="30%" backgroundColor="#1089CA" />
+  </FlexboxLayout>
+
+</Page>

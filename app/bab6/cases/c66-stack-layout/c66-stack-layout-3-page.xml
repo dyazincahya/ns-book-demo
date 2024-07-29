@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Stack Layout 2" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <StackLayout orientation="horizontal" backgroundColor="#eef7ff">
+    <Label text="1" width="70" backgroundColor="#43B3F4" />
+    <Label text="2" width="70" backgroundColor="#1089CA" />
+    <Label text="3" width="70" backgroundColor="#075B88" />
+  </StackLayout>
+
+</Page>

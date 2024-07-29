@@ -1,0 +1,53 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Demo Bab 6" colSpan="2"/>
+          <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <ScrollView>  
+    <StackLayout class="p-3">
+      <Label text="Navigation Components" horizontalAlignment="center" class="h2" />
+      <Button text="6.1 Navigation" class="btn-success" tap="openModule" moduleName="bab6/cases/c16-navigation/c16-navigation-page"  />
+      
+      <Label text="Layout Components" horizontalAlignment="center" class="h2" />
+      <Button text="6.2.1 Absolute Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-absolute-layout/c26-absolute-layout-page" />
+      
+      <Button text="6.2.1 Absolute Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-absolute-layout/c26-absolute-layout-2-page" />
+      
+      <Button text="6.2.2 Wrap Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-wrap-layout/c36-wrap-layout-page" />
+
+      <Button text="6.2.2 Wrap Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-wrap-layout/c36-wrap-layout-2-page" />
+
+      <Button text="6.2.3 Flexbox Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-page" />
+
+      <Button text="6.2.3 Flexbox Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-2-page" />
+      
+      <Button text="6.2.3 Flexbox Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-3-page" />
+
+      <Button text="6.2.3 Flexbox Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-4-page" />
+
+      <Button text="6.2.3 Flexbox Layout 5" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-5-page" />
+
+      <Button text="6.2.3 Flexbox Layout 6" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-6-page" />
+      
+      <Button text="6.2.4 Grid Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c56-grid-layout/c56-grid-layout-page" />
+
+      <Button text="6.2.4 Grid Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c56-grid-layout/c56-grid-layout-2-page" />
+      
+      <Button text="6.2.5 Stack Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-page" />
+
+      <Button text="6.2.5 Stack Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-2-page" />
+
+      <Button text="6.2.5 Stack Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-3-page" />
+
+      <Button text="6.2.5 Stack Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-4-page" />
+
+      <Label text="Basic Components" horizontalAlignment="center" class="h2" />
+
+      <Label text="Dialogs" horizontalAlignment="center" class="h2" />
+    </StackLayout>
+  </ScrollView>
+</Page>

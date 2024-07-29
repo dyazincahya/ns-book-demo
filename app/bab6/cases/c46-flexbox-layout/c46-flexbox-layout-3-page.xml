@@ -1,0 +1,33 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Flexbox Layout 2" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <FlexboxLayout backgroundColor="#eef7ff">
+    <Label
+      text="satu"
+      order="2"
+      width="70"
+      height="70"
+      backgroundColor="#43B3F4"
+    />
+    <Label
+      text="dua"
+      order="3"
+      width="70"
+      height="70"
+      backgroundColor="#075B88"
+    />
+    <Label
+      text="tiga"
+      order="1"
+      width="70"
+      height="70"
+      backgroundColor="#1089CA"
+    />
+  </FlexboxLayout>
+
+</Page>

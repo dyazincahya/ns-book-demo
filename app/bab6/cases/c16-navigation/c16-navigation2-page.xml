@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Navigation" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+    <ActionItem text="Blog" tap="blogPage" android.position="popup" />
+  </ActionBar>
+
+
+  <StackLayout class="p-3">
+    <Label text="Halaman 2" class="h2" horizontalAlignment="center" />
+    <StackLayout class="p-2" background="#000" borderRadius="10">
+      <Label class="h3" text="Data ini dikirim dari halaman 1" textAlignment="center" textWrap="true" fontWeight="bold" color="#FFF" />
+      <Label class="h4" text="{{ fullName }}" textWrap="true" textAlignment="center" color="#FFF" />
+      <Label class="h4" text="{{ blog }}" textWrap="true" textAlignment="center" color="#FFF" />
+    </StackLayout>
+  </StackLayout>
+</Page>

@@ -1,0 +1,28 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Absolute Layout 2" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <AbsoluteLayout backgroundColor="#eef7ff">
+    <Label
+      text="10, 10"
+      left="10"
+      top="10"
+      width="100"
+      height="100"
+      backgroundColor="#0089ca"
+    />
+    <Label
+      text="30, 40"
+      left="30"
+      top="40"
+      width="100"
+      height="100"
+      backgroundColor="#43b2f4"
+    />
+  </AbsoluteLayout>
+
+</Page>

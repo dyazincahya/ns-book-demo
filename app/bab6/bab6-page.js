@@ -1,4 +1,4 @@
-import { Application, Observable } from "@nativescript/core";
+import { Application, Frame, Observable } from "@nativescript/core";
 
 const context = new Observable();
 export function onNavigatingTo(args) {

@@ -1,6 +1,8 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
   <ActionBar>
-      <NavigationButton visibility="hidden"></NavigationButton>
+      <!-- <NavigationButton visibility="hidden"></NavigationButton> -->
+      <!-- <NavigationButton text="Go back" android.systemIcon="ic_menu_back" /> -->
+      
       <GridLayout columns="50, *">
           <Label class="action-bar-title" text="Gesture" colSpan="2"/>
           <Label class="fas" text="&#xf053;" tap="onBackTap"/>

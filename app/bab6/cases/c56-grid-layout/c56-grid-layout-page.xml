@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Grid Layout 1" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <GridLayout columns="115, 115" rows="115, 115">
+    <Label text="Row 0, Col 0" row="0" col="0" backgroundColor="#43B3F4" />
+    <Label text="Row 0, Col 1" row="0" col="1" backgroundColor="#1089CA" />
+    <Label text="Row 1, Col 0" row="1" col="0" backgroundColor="#1089CA" />
+    <Label text="Row 1, Col 1" row="1" col="1" backgroundColor="#43B3F4" />
+  </GridLayout>
+
+</Page>

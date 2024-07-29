@@ -1,0 +1,39 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Stack Layout 2" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <StackLayout orientation="horizontal" backgroundColor="#eef7ff">
+    <Label
+      text="top"
+      verticalAlignment="top"
+      width="70"
+      height="33%"
+      backgroundColor="#43B3F4"
+    />
+    <Label
+      text="center"
+      verticalAlignment="center"
+      width="70"
+      height="33%"
+      backgroundColor="#1089CA"
+    />
+    <Label
+      text="bottom"
+      verticalAlignment="bottom"
+      width="70"
+      height="33%"
+      backgroundColor="#075B88"
+    />
+    <Label
+      text="stretch"
+      verticalAlignment="stretch"
+      width="70"
+      backgroundColor="#43B3F4"
+    />
+  </StackLayout>
+
+</Page>

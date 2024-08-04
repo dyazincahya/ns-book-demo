@@ -10,42 +10,55 @@
   <ScrollView>  
     <StackLayout class="p-3">
       <Label text="Navigation Components" horizontalAlignment="center" class="h2" />
-      <Button text="6.1 Navigation" class="btn-success" tap="openModule" moduleName="bab6/cases/c16-navigation/c16-navigation-page"  />
+      <Button text="6.1 Navigation" class="btn-success" tap="openModule" moduleName="bab6/cases/c16-navigation-components/c16-navigation-page"  />
       
+
       <Label text="Layout Components" horizontalAlignment="center" class="h2" />
-      <Button text="6.2.1 Absolute Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-absolute-layout/c26-absolute-layout-page" />
+
+      <Button text="6.2.1 Absolute Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c26-absolute-layout/c26-absolute-layout-page" />
       
-      <Button text="6.2.1 Absolute Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-absolute-layout/c26-absolute-layout-2-page" />
+      <Button text="6.2.1 Absolute Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c26-absolute-layout/c26-absolute-layout-2-page" />
       
-      <Button text="6.2.2 Wrap Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-wrap-layout/c36-wrap-layout-page" />
+      <Button text="6.2.2 Wrap Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c36-wrap-layout/c36-wrap-layout-page" />
 
-      <Button text="6.2.2 Wrap Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-wrap-layout/c36-wrap-layout-2-page" />
+      <Button text="6.2.2 Wrap Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c36-wrap-layout/c36-wrap-layout-2-page" />
 
-      <Button text="6.2.3 Flexbox Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-page" />
+      <Button text="6.2.3 Flexbox Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-page" />
 
-      <Button text="6.2.3 Flexbox Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-2-page" />
+      <Button text="6.2.3 Flexbox Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-2-page" />
       
-      <Button text="6.2.3 Flexbox Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-3-page" />
+      <Button text="6.2.3 Flexbox Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-3-page" />
 
-      <Button text="6.2.3 Flexbox Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-4-page" />
+      <Button text="6.2.3 Flexbox Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-4-page" />
 
-      <Button text="6.2.3 Flexbox Layout 5" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-5-page" />
+      <Button text="6.2.3 Flexbox Layout 5" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-5-page" />
 
-      <Button text="6.2.3 Flexbox Layout 6" class="btn-success" tap="openModule" moduleName="bab6/cases/c46-flexbox-layout/c46-flexbox-layout-6-page" />
+      <Button text="6.2.3 Flexbox Layout 6" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c46-flexbox-layout/c46-flexbox-layout-6-page" />
       
-      <Button text="6.2.4 Grid Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c56-grid-layout/c56-grid-layout-page" />
+      <Button text="6.2.4 Grid Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c56-grid-layout/c56-grid-layout-page" />
 
-      <Button text="6.2.4 Grid Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c56-grid-layout/c56-grid-layout-2-page" />
+      <Button text="6.2.4 Grid Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c56-grid-layout/c56-grid-layout-2-page" />
       
-      <Button text="6.2.5 Stack Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-page" />
+      <Button text="6.2.5 Stack Layout 1" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c66-stack-layout/c66-stack-layout-page" />
 
-      <Button text="6.2.5 Stack Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-2-page" />
+      <Button text="6.2.5 Stack Layout 2" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c66-stack-layout/c66-stack-layout-2-page" />
 
-      <Button text="6.2.5 Stack Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-3-page" />
+      <Button text="6.2.5 Stack Layout 3" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c66-stack-layout/c66-stack-layout-3-page" />
 
-      <Button text="6.2.5 Stack Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c66-stack-layout/c66-stack-layout-4-page" />
+      <Button text="6.2.5 Stack Layout 4" class="btn-success" tap="openModule" moduleName="bab6/cases/c26-layout-components/c66-stack-layout/c66-stack-layout-4-page" />
+
 
       <Label text="Basic Components" horizontalAlignment="center" class="h2" />
+
+      <Button text="6.3.1 Activity Indicator" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/activity-indicator/example-page" />
+
+      <Button text="6.3.2 Button" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/button/example-page" />
+
+      <Button text="6.3.3 Date and Time Picker" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/date-time-picker/example-page" />
+
+      <Button text="6.3.4 Html View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/html-view/example-page" />
+
+      <Button text="6.3.5 Image" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/image/example-page" />
 
       <Label text="Dialogs" horizontalAlignment="center" class="h2" />
     </StackLayout>

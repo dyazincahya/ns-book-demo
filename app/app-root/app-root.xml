@@ -96,20 +96,20 @@
                         <Label row="0" col="1" text="Demo Bab VI" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout
+                    <!-- <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === '7' ? ' -selected': '') }}"
-                        route="bab1/bab1-page"
+                        route="bab7/bab7-page"
                         title="7"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
                         <Label row="0" col="1" text="Demo Bab VII" class="p-r-10" />
-                    </GridLayout>
+                    </GridLayout> -->
 
                     <StackLayout class="hr" />
 
-                    <GridLayout
+                    <!-- <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === 'About' ? ' -selected': '') }}"
                         route="bab1/bab1-page"
@@ -118,7 +118,7 @@
                     >
                         <Label row="0" col="0" text="&#xf013;" class="nt-icon fas" />
                         <Label row="0" col="1" text="About" class="p-r-10" />
-                    </GridLayout>
+                    </GridLayout> -->
                 </StackLayout>
             </ScrollView>
         </GridLayout>

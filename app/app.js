@@ -1,7 +1,4 @@
 import { Application } from "@nativescript/core";
-import { init } from "@nativescript/background-http";
-
-init();
 
 Application.run({ moduleName: "app-root/app-root" });
 

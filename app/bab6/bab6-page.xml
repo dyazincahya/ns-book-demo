@@ -59,6 +59,16 @@
       <Button text="6.3.4 Html View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/html-view/example-page" />
 
       <Button text="6.3.5 Image" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/image/example-page" />
+      
+      <Button text="6.3.6 Label" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/label/example-page" />
+      
+      <Button text="6.3.7 List View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/list-view/example-page" />
+
+      <Button text="6.3.8 Progress" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/progress/example-page" />
+
+      <Button text="6.3.9 Scroll View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/scroll-view/example-page" />
+
+      <Button text="6.3.10 Search Bar" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/search-bar/example-page" />
 
       <Label text="Dialogs" horizontalAlignment="center" class="h2" />
     </StackLayout>

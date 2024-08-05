@@ -4,10 +4,10 @@ const context = new Observable();
 export function onNavigatingTo(args) {
   const page = args.object;
 
-  context.set("pageTitle", "Image");
+  context.set("pageTitle", "Label");
   context.set(
     "consoleText",
-    "Gambar berasal dari App_Resource dengan nama file Logo"
+    "Anda dapat menggunakan kombinasi FormattedString dan Span."
   );
 
   page.bindingContext = context;

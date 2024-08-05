@@ -12,7 +12,7 @@ export function onBackTap() {
 
 export function goToPage2() {
   Frame.topmost().navigate({
-    moduleName: "bab6/cases/c16-navigation/c16-navigation2-page",
+    moduleName: "bab6/cases/c16-navigation-components/c16-navigation2-page",
     transition: {
       name: "fade",
     },

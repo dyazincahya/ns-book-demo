@@ -1,0 +1,40 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="{{ pageTitle }}" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <GridLayout rows="*, auto" class="p-3">
+    <StackLayout row="0">
+      <TabView selectedIndexChanged="tabChanged">
+        <TabViewItem title="First">
+          <Label 
+            text="First Tab Content" 
+            textAlignment="center" 
+            verticalAlignment="center" />
+        </TabViewItem>
+        <TabViewItem title="Second">
+          <Label 
+            text="Second Tab Content" 
+            textAlignment="center" 
+            verticalAlignment="center" />
+        </TabViewItem>
+        <TabViewItem title="Third">
+          <Label 
+            text="Third Tab Content" 
+            textAlignment="center" 
+            verticalAlignment="center" />
+        </TabViewItem>
+      </TabView>
+
+
+    </StackLayout>
+    <StackLayout row="1" class="p-2" background="#000" borderRadius="10">
+      <Label class="h3" text="CONSOLE" textAlignment="center" textWrap="true" fontWeight="bold" color="#FFF" />
+      <Label class="h4" text="{{ consoleText }}" textWrap="true" textAlignment="center" color="#FFF" />
+    </StackLayout>
+  </GridLayout>
+
+</Page>

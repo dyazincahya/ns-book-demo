@@ -70,6 +70,20 @@
 
       <Button text="6.3.10 Search Bar" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/search-bar/example-page" />
 
+      <Button text="6.3.11 Segmented Bar" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/segmented-bar/example-page" />
+
+      <Button text="6.3.12 Slider" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/slider/example-page" />
+
+      <Button text="6.3.13 Switch" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/switch/example-page" />
+
+      <Button text="6.3.14 Tab View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/tab-view/example-page" />
+
+      <Button text="6.3.15 Text Field" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/text-field/example-page" />
+
+      <Button text="6.3.16 Text View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/text-view/example-page" />
+
+      <Button text="6.3.17 Web View" class="btn-success" tap="openModule" moduleName="bab6/cases/c36-basic-components/web-view/example-page" />
+
       <Label text="Dialogs" horizontalAlignment="center" class="h2" />
     </StackLayout>
   </ScrollView>

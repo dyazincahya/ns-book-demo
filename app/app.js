@@ -1,4 +1,7 @@
 import { Application } from "@nativescript/core";
+import { Theme } from "@nativescript/theme";
+
+Theme.setMode(Theme.Light); // Theme.Dark Or Theme.Light
 
 Application.run({ moduleName: "app-root/app-root" });
 

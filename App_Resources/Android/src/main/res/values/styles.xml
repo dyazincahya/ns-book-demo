@@ -40,4 +40,10 @@
 
     <style name="NativeScriptToolbarStyle" parent="NativeScriptToolbarStyleBase">
     </style>
+
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">#000000</item> <!-- Example: Red text color -->
+        <item name="android:background">#fdd835</item> <!-- Example: White background -->
+        <!-- Add other style customizations here -->
+    </style>
 </resources>

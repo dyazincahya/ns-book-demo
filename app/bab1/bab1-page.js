@@ -116,7 +116,7 @@ export function showToastAndroidJava() {
 
 export function showToastAndroidKotlin() {
   if (isAndroid) {
-    showToast("Hello this Toast from Kotlin in NativeScript");
+    showToast("Hello, this Toast from Kotlin in NativeScript");
   } else {
     Dialogs.alert({
       title: "Info",

@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Native Code" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <GridLayout class="p-3">
+    <Button text="Show Toast Android from Kotlin" class="btn-primary" tap="showToast" />
+  </GridLayout>
+</Page>

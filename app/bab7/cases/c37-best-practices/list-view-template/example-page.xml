@@ -1,0 +1,28 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="List View using Template" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <GridLayout rows="*">
+    <ListView items="{{ items }}" class="list-group" itemTemplateSelector="selectItemTemplate" row="0">
+      <ListView.itemTemplates>
+        <template key="onelayout">
+            <StackLayout backgroundColor="#65ADF1" color="#FFFFFF">
+              <Label text="{{ title }}" textWrap="true" class="title" />
+            </StackLayout>
+        </template>
+        <template key="anotherlayout">
+          <GridLayout rows="auto,5,auto" backgroundColor="#27ae61" color="#FFFFFF">
+            <Label text="{{ title }}" textWrap="true" class="title" />
+            <Label row="2" text="{{ 'Sub-content of ' + title }}" textWrap="true" class="title" />
+          </GridLayout>
+        </template>
+      </ListView.itemTemplates>
+    </ListView>
+  </GridLayout>
+</Page>

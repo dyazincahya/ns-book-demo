@@ -1,0 +1,27 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Delay Request" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <GridLayout rows="*">
+    <ActivityIndicator busy="true" 
+      height="60" width="60" 
+      visibility="{{ isLoading ? 'visible' : 'collapsed' }}" />
+    <ListView 
+      items="{{ items }}" 
+      class="list-group" 
+      visibility="{{ !isLoading ? 'visible' : 'collapsed' }}"
+      row="0">
+      <ListView.itemTemplates>
+        <StackLayout backgroundColor="#65ADF1" color="#FFFFFF">
+          <Label text="{{ title }}" textWrap="true" class="title" />
+        </StackLayout>
+      </ListView.itemTemplates>
+    </ListView>
+  </GridLayout>
+</Page>

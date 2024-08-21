@@ -1,0 +1,6 @@
+
+
+module LocalModule {
+    header "OtherAwesomeClass.h"
+    export *
+}

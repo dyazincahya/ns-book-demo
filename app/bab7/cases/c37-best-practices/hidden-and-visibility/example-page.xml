@@ -1,0 +1,62 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Hidden and Visibility" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <ScrollView>   
+    <GridLayout class="p-2" rows="*, 10, *"> 
+      <StackLayout class="p-3" backgroundColor="#65ADF1" row="0">
+        <Label
+          text="Just Content for Visibility"
+          class="h2 px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mb-3"
+          visibility="{{ visibilityStatus }}"
+          />
+
+        <Label
+          text="{{ 'Visibility is : ' + visibilityStatus }}"
+          horizontalAlignment="center"
+          class="h2 text-white mb-3"
+          />
+
+        <Button 
+          text="Set Visible" tap="setVisibility"
+          status="visible" 
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-3"/>
+
+        <Button 
+          text="Set Collapse" tap="setVisibility"
+          status="collapse" 
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-3"/>
+        
+        <Button 
+          text="Set Hidden" tap="setVisibility"
+          status="hidden" 
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded"/>
+      </StackLayout>
+
+      <StackLayout class="p-3" backgroundColor="#65ADF1" row="2">
+        <Label
+          text="Just Content for Hidden"
+          class="h2 px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mb-3"
+          hidden="{{ hiddenStatus }}"
+          />
+
+        <Label
+          text="{{ 'Hidden is : ' + (hiddenStatus ? 'YES' : 'NO') }}"
+          horizontalAlignment="center"
+          class="h2 text-white mb-3"
+          />
+
+        <Button 
+          tap="setHidden"
+          text="{{ 'Set Hidden ' + (hiddenStatus ? 'FALSE' : 'TRUE') }}" 
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded"/>
+      </StackLayout>
+    </GridLayout>
+  </ScrollView>
+</Page>

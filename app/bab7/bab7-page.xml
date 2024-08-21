@@ -1,0 +1,28 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Demo Bab 7" colSpan="2"/>
+          <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <ScrollView>  
+    <StackLayout class="p-3">
+      <Button text="7.1 Native Code" class="btn-success" tap="openModule" moduleName="bab7/cases/c17-native-code/example-page" />
+
+      <Button text="7.2 TailwindCSS" class="btn-success" tap="openModule" moduleName="bab7/cases/c27-tailwind/example-page" />
+      
+      <Label text="7.3 Best Practices" horizontalAlignment="center" class="h2" />
+
+      <Button text="7.3.2 List View using Template" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/list-view-template/example-page" />
+
+      <Button text="7.3.3 Hidden and Visibility" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/hidden-and-visibility/example-page" />
+
+      <Button text="7.3.4 Delaying with Timers : Delay Request" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/list-view-delay-request/example-page" />
+
+      <Button text="7.3.4 Delaying with Timers : Load Item With Delay" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/list-view-delay-item/example-page" />
+      
+    </StackLayout>
+  </ScrollView>
+</Page>

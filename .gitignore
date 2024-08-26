@@ -5,6 +5,7 @@ platforms/
 .migration_backup
 package-lock.json
 timeline-emulator-5554.json
+dist
 
 # Logs
 logs

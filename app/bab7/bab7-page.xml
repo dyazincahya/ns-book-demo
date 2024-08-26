@@ -22,6 +22,12 @@
       <Button text="7.3.4 Delaying with Timers : Delay Request" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/list-view-delay-request/example-page" />
 
       <Button text="7.3.4 Delaying with Timers : Load Item With Delay" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c37-best-practices/list-view-delay-item/example-page" />
+
+      <Label text="7.4 Font Icons" horizontalAlignment="center" class="h2" />
+
+      <Button text="7.4.1 FontAwesome" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c47-font-icons/font-awesome/example-page" />
+
+      <Button text="7.4.2 Material Symbols" textWrap="true" class="btn-success" tap="openModule" moduleName="bab7/cases/c47-font-icons/material-symbols/example-page" />
       
     </StackLayout>
   </ScrollView>

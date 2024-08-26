@@ -1,6 +1,7 @@
 <Page
     navigatingTo="onNavigatingTo"
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:ui="@nativescript/firebase-admob">
 
     <ActionBar>
         <NavigationButton visibility="hidden"></NavigationButton>
@@ -10,8 +11,8 @@
         </GridLayout>
     </ActionBar>
 
-    <GridLayout>
-        <StackLayout horizontalAlignment="center" verticalAlignment="middle">
+    <GridLayout rows="*, auto, *, auto">
+        <StackLayout horizontalAlignment="center" verticalAlignment="middle" row="1">
             <Image src="~/assets/logo.png" height="150" />
             <Label textWrap="true" textAlignment="center" fontSize="36">
                 <FormattedString>
@@ -35,6 +36,18 @@
                     </FormattedString>
                 </Button>
             </StackLayout>
+        </StackLayout>
+        <StackLayout row="3">
+            <Label 
+                text="Contoh Banner Ad" 
+                tap="loadInterstisialAd" 
+                horizontalAlignment="center"
+                class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full" />
+            <ui:BannerAd
+                height="100"
+                width="320"
+                unitId="ca-app-pub-1640120316722376/8781389717"
+                layoutChanged="bannerAdLoaded" />
         </StackLayout>
     </GridLayout>
 </Page>

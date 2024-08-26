@@ -107,6 +107,17 @@
                         <Label row="0" col="1" text="Demo Bab VII" class="p-r-10" />
                     </GridLayout>
 
+                    <GridLayout
+                        columns="auto, *"
+                        class="{{ 'nt-drawer__list-item' + (selectedPage === '9' ? ' -selected': '') }}"
+                        route="bab9/bab9-page"
+                        title="9"
+                        tap="onNavigationItemTap"
+                    >
+                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
+                        <Label row="0" col="1" text="Demo Bab IX" class="p-r-10" />
+                    </GridLayout>
+
                     <StackLayout class="hr" />
 
                     <!-- <GridLayout

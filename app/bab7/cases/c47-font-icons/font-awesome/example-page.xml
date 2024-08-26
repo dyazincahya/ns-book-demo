@@ -1,0 +1,39 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="FontAwesome" colSpan="2"/>
+        <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+    </GridLayout>
+  </ActionBar>
+
+  <ScrollView>   
+    <StackLayout class="p-5">
+      <!-- Contoh penerapan pada komponen Label -->
+      <Label text="&#xf007;" class="fas" />
+
+      <Label textWrap="true">
+        <FormattedString>
+          <Span text="&#xf007;" class="fas" />
+          <Span text="Users" />
+        </FormattedString>
+      </Label>
+
+      <!-- Contoh penerapan pada komponen Button -->
+      <Button text="&#xf007;" class="fas" />
+
+      <Button textWrap="true">
+        <FormattedString>
+          <Span text="&#xf007;" class="fas" />
+          <Span text="Users" />
+        </FormattedString>
+      </Button>
+
+      <!-- Contoh penerapan pada komponen Image -->
+      <!-- Format untuk di komponen Image -->
+      <!-- font:// + &#x + unicode -->
+      <Image src="font://&#xf007;" class="fas" width="30" height="30" />
+    </StackLayout>
+  </ScrollView>
+</Page>

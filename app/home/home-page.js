@@ -1,4 +1,5 @@
 import { Application, Frame } from "@nativescript/core";
+import { BannerAdSize } from "@nativescript/firebase-admob";
 
 import { GlobalModel } from "~/global_model";
 
@@ -24,4 +25,11 @@ export function openModule(args) {
       },
     });
   }
+}
+
+export function bannerAdLoaded(args) {
+  const banner = args.object;
+  const adSize = new BannerAdSize(320, 100);
+  banner.size = adSize;
+  banner.load();
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258325696710",
+    "project_id": "ns-book-demo-by-kang-cahya",
+    "storage_bucket": "ns-book-demo-by-kang-cahya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258325696710:android:bce7240ecc2416199807c7",
+        "android_client_info": {
+          "package_name": "com.kang.cahya.apps.sampleDemoOfNativescriptBook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt_LO3npVg8Gr78qmi8k-ptrr5Jp2L_CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

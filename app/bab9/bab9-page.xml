@@ -1,0 +1,32 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:ui="@nativescript/firebase-admob"
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Demo Bab 9" colSpan="2"/>
+          <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <GridLayout rows="20, *, 10, auto, 5, auto, 10" class="p-3">
+    <Button 
+      text="Load Interstisial Ad" 
+      tap="loadInterstisialAd" 
+      class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+      row="1" />
+    <Label 
+      text="Contoh Banner Ad" 
+      tap="loadInterstisialAd" 
+      horizontalAlignment="center"
+      class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full" row="3" />
+    <StackLayout row="5">
+      <ui:BannerAd
+        height="50"
+        width="320"
+        unitId="ca-app-pub-1640120316722376/8781389717"
+        layoutChanged="bannerAdLoaded" />
+    </StackLayout>
+  </GridLayout>
+</Page>

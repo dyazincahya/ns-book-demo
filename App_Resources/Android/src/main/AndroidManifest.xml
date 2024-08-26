@@ -21,6 +21,11 @@
 		android:theme="@style/AppTheme"
 		android:hardwareAccelerated="true">
 
+		<meta-data
+			android:name="com.google.android.gms.ads.APPLICATION_ID"
+			android:value="ca-app-pub-1640120316722376~3315679735"
+		/>
+
 		<activity
 			android:name="com.tns.NativeScriptActivity"
 			android:label="@string/title_activity_kimera"

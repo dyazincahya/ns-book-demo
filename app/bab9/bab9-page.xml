@@ -10,22 +10,47 @@
       </GridLayout>
   </ActionBar>
 
-  <GridLayout rows="20, *, 10, auto, 5, auto, 10" class="p-3">
-    <Button 
-      text="Load Interstisial Ad" 
-      tap="loadInterstisialAd" 
-      class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-      row="1" />
+  <GridLayout rows="20, auto, 10, *, 10, auto, 10" class="p-3">
     <Label 
-      text="Contoh Banner Ad" 
-      tap="loadInterstisialAd" 
+      text="Google AdMob"
       horizontalAlignment="center"
-      class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full" row="3" />
+      class="h1" row="1" />
+
+    <StackLayout row="3">
+      <Button 
+        text="Load Interstisial Ad" 
+        tap="loadInterstisialAd" 
+        class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        />
+      <Button 
+        text="Load Rewarded Ad" 
+        tap="loadRewardedAd" 
+        class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        />
+
+      <Label 
+        text="Contoh Native Ad"
+        horizontalAlignment="center"
+        class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mt-5" />
+      <ui:NativeAdView height="400" loaded="nativeAdLoaded" class="mt-2">
+        <GridLayout height="300" width="100%">
+          <Label id="headLineView" />
+          <ui:MediaView id="mediaView" height="100%"/>
+          <Label id="bodyView" />
+          <Button id="callToActionView" />
+        </GridLayout>
+      </ui:NativeAdView>
+    </StackLayout>
+    
     <StackLayout row="5">
+      <Label 
+        text="Contoh Banner Ad"
+        horizontalAlignment="center"
+        class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mb-3" />
       <ui:BannerAd
         height="50"
         width="320"
-        unitId="ca-app-pub-1640120316722376/8781389717"
+        unitId="{{ bannerAdId }}"
         layoutChanged="bannerAdLoaded" />
     </StackLayout>
   </GridLayout>

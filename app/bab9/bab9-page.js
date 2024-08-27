@@ -1,9 +1,21 @@
 import { Application, Observable } from "@nativescript/core";
-import { InterstitialAd, BannerAdSize } from "@nativescript/firebase-admob";
+import {
+  InterstitialAd,
+  RewardedAd,
+  NativeAdLoader,
+  AdChoicesPlacement,
+  NativeAdEventType,
+  BannerAdSize,
+} from "@nativescript/firebase-admob";
+
+import admobId from "~/shared/admobId.json";
 
 const context = new Observable();
 export function onNavigatingTo(args) {
   const page = args.object;
+
+  context.set("bannerAdId", admobId.banner);
+
   page.bindingContext = context;
 }
 
@@ -13,20 +25,73 @@ export function onDrawerButtonTap(args) {
 }
 
 export function loadInterstisialAd() {
-  const ad = InterstitialAd.createForAdRequest(
-    "ca-app-pub-1640120316722376/5732316867"
-  );
+  const ad = InterstitialAd.createForAdRequest(admobId.ininterstisial);
 
   ad.onAdEvent((event, error, data) => {
-    /* 
-      event : adLoaded, adClosed
-     */
+    if (event === AdEventType.LOADED) {
+      console.log("rewarded", "loaded");
+      // ad.show({
+      //   immersiveModeEnabled: true,
+      // });
+    } else if (event === AdEventType.FAILED_TO_LOAD_EVENT) {
+      console.error("loading error", error);
+    }
     ad.show({
       immersiveModeEnabled: true,
     });
   });
 
   ad.load();
+}
+
+export function loadRewardedAd() {
+  const ad = RewardedAd.createForAdRequest(admobId.rewarded);
+
+  ad.onAdEvent((event, error, data) => {
+    if (event === AdEventType.LOADED) {
+      console.log("rewarded", "loaded");
+    } else if (event === AdEventType.FAILED_TO_LOAD_EVENT) {
+      console.error("loading error", error);
+    }
+    ad.show({
+      immersiveModeEnabled: true,
+    });
+  });
+
+  ad.load();
+}
+
+export function nativeAdLoaded(event) {
+  const view = event.object;
+
+  const loader = new NativeAdLoader(admobId.native, null, {
+    nativeAdOptions: {
+      adChoicesPlacement: AdChoicesPlacement.TOP_RIGHT,
+    },
+  });
+
+  loader.onAdEvent((event, error, data) => {
+    if (event === NativeAdEventType.LOADED) {
+      const ad = data;
+
+      const headLineView = view.getViewById("headLineView");
+      headLineView.text = ad.headline;
+      const mediaView = view.getViewById("mediaView");
+      view.mediaView = mediaView;
+      mediaView.mediaContent = ad.mediaContent;
+      const callToActionButton = view.getViewById("callToActionView");
+      view.callToActionView = callToActionButton;
+      callToActionButton.text = ad.callToAction;
+      const bodyView = view.getViewById("bodyView");
+      bodyView.text = ad.body;
+      view.nativeAd = ad;
+      console.log("nativead loaded");
+    } else if (event === "adFailedToLoad") {
+      console.log("nativead failed to load", error);
+    }
+  });
+
+  loader.load();
 }
 
 export function bannerAdLoaded(args) {

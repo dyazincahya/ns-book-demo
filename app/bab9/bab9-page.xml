@@ -50,7 +50,7 @@
       <ui:BannerAd
         height="50"
         width="320"
-        unitId="{{ bannerAdId }}"
+        unitId="ca-app-pub-1640120316722376/8781389717"
         layoutChanged="bannerAdLoaded" />
     </StackLayout>
   </GridLayout>

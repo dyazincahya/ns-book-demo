@@ -8,14 +8,9 @@ import {
   BannerAdSize,
 } from "@nativescript/firebase-admob";
 
-import admobId from "~/shared/admobId.json";
-
 const context = new Observable();
 export function onNavigatingTo(args) {
   const page = args.object;
-
-  context.set("bannerAdId", admobId.banner);
-
   page.bindingContext = context;
 }
 
@@ -25,7 +20,9 @@ export function onDrawerButtonTap(args) {
 }
 
 export function loadInterstisialAd() {
-  const ad = InterstitialAd.createForAdRequest(admobId.ininterstisial);
+  const ad = InterstitialAd.createForAdRequest(
+    "ca-app-pub-1640120316722376/5732316867"
+  );
 
   ad.onAdEvent((event, error, data) => {
     if (event === AdEventType.LOADED) {
@@ -45,7 +42,9 @@ export function loadInterstisialAd() {
 }
 
 export function loadRewardedAd() {
-  const ad = RewardedAd.createForAdRequest(admobId.rewarded);
+  const ad = RewardedAd.createForAdRequest(
+    "ca-app-pub-1640120316722376/1917496259"
+  );
 
   ad.onAdEvent((event, error, data) => {
     if (event === AdEventType.LOADED) {
@@ -64,11 +63,15 @@ export function loadRewardedAd() {
 export function nativeAdLoaded(event) {
   const view = event.object;
 
-  const loader = new NativeAdLoader(admobId.native, null, {
-    nativeAdOptions: {
-      adChoicesPlacement: AdChoicesPlacement.TOP_RIGHT,
-    },
-  });
+  const loader = new NativeAdLoader(
+    "ca-app-pub-1640120316722376/1487881727",
+    null,
+    {
+      nativeAdOptions: {
+        adChoicesPlacement: AdChoicesPlacement.TOP_RIGHT,
+      },
+    }
+  );
 
   loader.onAdEvent((event, error, data) => {
     if (event === NativeAdEventType.LOADED) {

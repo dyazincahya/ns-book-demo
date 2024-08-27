@@ -3,15 +3,10 @@ import { BannerAdSize } from "@nativescript/firebase-admob";
 
 import { GlobalModel } from "~/global_model";
 
-import admobId from "~/shared/admobId.json";
-
 var context = new GlobalModel([{ page: "Home" }]);
 
 export function onNavigatingTo(args) {
   const page = args.object;
-
-  context.set("bannerAdId", admobId.banner);
-
   page.bindingContext = context;
 }
 

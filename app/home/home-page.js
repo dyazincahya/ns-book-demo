@@ -29,7 +29,7 @@ export function openModule(args) {
 
 export function bannerAdLoaded(args) {
   const banner = args.object;
-  const adSize = new BannerAdSize(320, 100);
+  const adSize = new BannerAdSize(320, 50);
   banner.size = adSize;
   banner.load();
 }

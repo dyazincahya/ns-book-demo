@@ -44,7 +44,7 @@
                 horizontalAlignment="center"
                 class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full" />
             <ui:BannerAd
-                height="100"
+                height="50"
                 width="320"
                 unitId="ca-app-pub-1640120316722376/8781389717"
                 layoutChanged="bannerAdLoaded" />

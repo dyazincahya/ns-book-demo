@@ -34,55 +34,55 @@
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab1' ? ' -selected': '') }}"
                         route="bab1/bab1-page"
-                        title="Bab1"
+                        title="BAB I"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab I" class="p-r-10" />
+                        <Label row="0" col="1" text="Demo BAB I" class="p-r-10" />
                     </GridLayout>
 
                     <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab5' ? ' -selected': '') }}"
                         route="bab5/bab5-page"
-                        title="Bab5"
+                        title="BAB V"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab V" class="p-r-10" />
+                        <Label row="0" col="1" text="Demo BAB V" class="p-r-10" />
                     </GridLayout>
                     
                     <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab6' ? ' -selected': '') }}"
                         route="bab6/bab6-page"
-                        title="Bab6"
+                        title="BAB VI"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab VI" class="p-r-10" />
+                        <Label row="0" col="1" text="Demo BAB VI" class="p-r-10" />
                     </GridLayout>
 
                     <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === '7' ? ' -selected': '') }}"
                         route="bab7/bab7-page"
-                        title="7"
+                        title="BAB VII"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab VII" class="p-r-10" />
+                        <Label row="0" col="1" text="Demo BAB VII" class="p-r-10" />
                     </GridLayout>
 
                     <GridLayout
                         columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === '9' ? ' -selected': '') }}"
                         route="bab9/bab9-page"
-                        title="9"
+                        title="BAB IX"
                         tap="onNavigationItemTap"
                     >
                         <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab IX" class="p-r-10" />
+                        <Label row="0" col="1" text="Demo BAB IX" class="p-r-10" />
                     </GridLayout>
 
                     <StackLayout class="hr" />

@@ -5,7 +5,7 @@
     <ActionBar>
         <NavigationButton visibility="hidden"></NavigationButton>
         <GridLayout columns="50, *">
-            <Label class="action-bar-title" text="Demo Bab I" colSpan="2"/>
+            <Label class="action-bar-title" text="Demo BAB I" colSpan="2"/>
             <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
         </GridLayout>
     </ActionBar>

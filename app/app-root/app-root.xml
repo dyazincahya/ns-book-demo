@@ -43,39 +43,6 @@
 
                     <GridLayout
                         columns="auto, *"
-                        class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab2' ? ' -selected': '') }}"
-                        route="bab1/bab1-page"
-                        title="Bab2"
-                        tap="onNavigationItemTap"
-                    >
-                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab II" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-                        columns="auto, *"
-                        class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab3' ? ' -selected': '') }}"
-                        route="bab1/bab1-page"
-                        title="Bab3"
-                        tap="onNavigationItemTap"
-                    >
-                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab III" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-                        columns="auto, *"
-                        class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab4' ? ' -selected': '') }}"
-                        route="bab1/bab1-page"
-                        title="Bab4"
-                        tap="onNavigationItemTap"
-                    >
-                        <Label row="0" col="0" text="&#xf0da;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Demo Bab IV" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-                        columns="auto, *"
                         class="{{ 'nt-drawer__list-item' + (selectedPage === 'Bab5' ? ' -selected': '') }}"
                         route="bab5/bab5-page"
                         title="Bab5"

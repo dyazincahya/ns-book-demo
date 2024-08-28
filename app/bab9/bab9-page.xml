@@ -1,7 +1,4 @@
-<Page 
-  xmlns="http://schemas.nativescript.org/tns.xsd" 
-  xmlns:ui="@nativescript/firebase-admob"
-  navigatingTo="onNavigatingTo">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
   <ActionBar>
       <NavigationButton visibility="hidden"></NavigationButton>
       <GridLayout columns="50, *">
@@ -10,48 +7,20 @@
       </GridLayout>
   </ActionBar>
 
-  <GridLayout rows="20, auto, 10, *, 10, auto, 10" class="p-3">
-    <Label 
-      text="Google AdMob"
-      horizontalAlignment="center"
-      class="h1" row="1" />
-
-    <StackLayout row="3">
-      <Button 
-        text="Load Interstisial Ad" 
-        tap="loadInterstisialAd" 
-        class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-        />
-      <Button 
-        text="Load Rewarded Ad" 
-        tap="loadRewardedAd" 
-        class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-        />
-
+  <ScrollView>  
+    <StackLayout class="p-3">
       <Label 
-        text="Contoh Native Ad"
+        text="Google AdMob Sample"
         horizontalAlignment="center"
-        class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mt-5" />
-      <ui:NativeAdView height="400" loaded="nativeAdLoaded" class="mt-2">
-        <GridLayout height="300" width="100%">
-          <Label id="headLineView" />
-          <ui:MediaView id="mediaView" height="100%"/>
-          <Label id="bodyView" />
-          <Button id="callToActionView" />
-        </GridLayout>
-      </ui:NativeAdView>
+        class="h2 mb-3" />
+
+      <Button text="Banner Ad" class="btn-success" tap="openModule" moduleName="bab9/cases/banner-ad/example-page" />
+
+      <Button text="Interstisial Ad" class="btn-success" tap="openModule" moduleName="bab9/cases/interstisial-ad/example-page" />
+
+      <Button text="Native Ad" class="btn-success" tap="openModule" moduleName="bab9/cases/native-ad/example-page" />
+
+      <Button text="Rewarded Ad" class="btn-success" tap="openModule" moduleName="bab9/cases/rewarded-ad/example-page" />
     </StackLayout>
-    
-    <StackLayout row="5">
-      <Label 
-        text="Contoh Banner Ad"
-        horizontalAlignment="center"
-        class="px-2 py-1 text-center text-blue-600 bg-blue-200 rounded-full mb-3" />
-      <ui:BannerAd
-        height="50"
-        width="320"
-        unitId="ca-app-pub-1640120316722376/8781389717"
-        layoutChanged="bannerAdLoaded" />
-    </StackLayout>
-  </GridLayout>
+  </ScrollView>
 </Page>

@@ -1,0 +1,20 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:ui="@nativescript/firebase-admob"
+  navigatingTo="onNavigatingTo">
+  <ActionBar>
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50, *">
+          <Label class="action-bar-title" text="Interstisial" colSpan="2"/>
+          <Label class="fas" text="&#xf053;" tap="onBackTap"/>
+      </GridLayout>
+  </ActionBar>
+
+  <GridLayout class="p-3">
+    <Button 
+      text="Load Interstisial Ad" 
+      tap="loadInterstisialAd" 
+      class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+      />
+  </GridLayout>
+</Page>

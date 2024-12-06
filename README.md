@@ -3,6 +3,4 @@
 # NS Book demo
 This is a Demo Apps of NativeScript Book by [Kang Cahya](https://www.kang-cahya.com)
 
-## Book Repo
-[Reading Book Here](https://github.com/dyazincahya/nativescript-book-id)
 

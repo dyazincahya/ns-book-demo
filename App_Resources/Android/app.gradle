@@ -12,16 +12,16 @@ dependencies {
 // apply plugin: 'kotlin-android-extensions'
 
 android {
-  compileSdkVersion 34
-  buildToolsVersion "34"
+  compileSdkVersion 35
+  buildToolsVersion "35"
 
   defaultConfig {
     minSdkVersion 24
-    targetSdkVersion 34
+    targetSdkVersion 35
 
     // Version Information
-    versionCode 13
-    versionName "1.0.8"
+    versionCode 14
+    versionName "1.0.9"
     
     generatedDensities = []
   }

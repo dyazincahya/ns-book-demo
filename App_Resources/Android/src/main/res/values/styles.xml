@@ -23,6 +23,9 @@
     <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="toolbarStyle">@style/NativeScriptToolbarStyle</item>
 
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
         <item name="colorPrimary">@color/ns_primary</item>
         <item name="colorPrimaryDark">@color/ns_primaryDark</item>
         <item name="colorAccent">@color/ns_accent</item>
